@@ -3,8 +3,17 @@
     <head>
         <meta charset="utf-8">
         <title>Detail</title>
+
     </head>
     <body>
-        
+restaurant
+    	<h1>{{restaurant.name}}</h1>
+	    <p>{{restaurant.description}}</p>
+	    <p>Opening in: {{restaurant.opening_time}}</p>
+	    <p>closing at: {{restaurant.closing_time}}</p>
+<br>
+<br>
+<hr>
+	    <a href="{% url 'restaurant-list' %}"> Back to list</a>
     </body>
 </html>
